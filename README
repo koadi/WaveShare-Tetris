@@ -1,0 +1,15 @@
+WaveShare-Tetris
+----------------
+
+This is a Tetris game I made for use with the WaveShare Open 18F4520 development board.
+It's full featured and somewhat well commented.
+
+If you'd like to run this on WaveShare hardware, you'll need their LCD22 module, touchscreen 2.2" with SPI interface.
+http://wvshare.com/product/Open18F4520-Standard.htm
+http://wvshare.com/product/2.2inch-320x240-Touch-LCD-A.htm
+You'll also need to add pull-up resistors on the implemented Joystick lines because WaveShare, at least on my board, 
+wired these directly to ground. Pull up jumpers I made: http://imgur.com/q60gK
+
+Otherwise, if you'd like to use this on your own hardware you'll need to implement your own GLCD library with
+similar interfaces to the ones in glcd.c. You'll also need input switches for Left, Right, Down, Rotate, and Pause.
+
